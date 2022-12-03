@@ -7,7 +7,7 @@ const Rates = require("./rates");
 const Accounts = require("./accounts");
 
 // Config
-const mongoURI = "mongodb://localhost:27017/learn";
+const mongoURI = process.env.MONGO_URL;
 const db = mongoose.connection;
 
 // Connect
